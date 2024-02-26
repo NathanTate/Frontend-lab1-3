@@ -1,0 +1,125 @@
+.category-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F8FA;
+    padding: 30px 0px 60px;
+}
+
+.category-section h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1395px;
+    width: 100%;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+    margin-top: 24px;
+}
+
+.item-card {
+    margin: 32px 16px;
+}
+
+.picture-container::after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0);
+    transition: opacity 0.3s;
+}
+
+.item-card:hover .picture-container::after {
+    opacity: 0.4;
+}
+.item-card:hover .card-item-btn {
+    background-color: black;
+    color: white;
+}
+.item-card:hover .more-btn{
+    opacity: 1;
+}
+
+.picture-container {
+    position: relative;
+    padding: 56px 42px 16px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.item-price {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+    border-radius: 30px 0px 16px 0px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 3% 6%;
+
+}
+
+.btn {
+    width: 100%;
+    margin-top: 22px;
+    background-color: #fff;
+    color: black;
+    font-size: 18px;
+    padding: 15px 50px;
+    border-radius: 9999px;
+    border: none;
+    box-shadow: 0px 0px 3px 1px rgb(235, 235, 235);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.more-btn {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    background-color: #fff;
+    color: black;
+    font-size: 16px;
+    z-index: 999;
+    transition: opacity 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .category-section {
+        padding: 30px 20px 100px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .category-section {
+        padding: 60px 30px 100px;
+    }
+    .items-grid {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 450px;
+    }
+}
+

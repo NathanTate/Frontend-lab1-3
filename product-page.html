@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="/styles/general.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/product-page.css" />
+    <link rel="stylesheet" href="styles/footer.css">
+  </head>
+  <body>
+    <special-header></special-header>
+    <main class="main">
+      <section class="current-item-section">
+        <h2 class="title">B.O.M.J Black</h2>
+        <div class="current-item-grid">
+          <div class="img-container">
+            <img src="/clothes-image/ucPsORdrx3gjKUU.webp" alt="" />
+          </div>
+          <div class="item-info">
+            <div class="main-info">
+              <div class="price">975 UAH</div>
+              <div>Тонка. Легка. Чорна.</div>
+              <p>
+                Футболка лінійки B.O.M.J - перша одиниця контрбрендової лінії
+                одягу. Неймовірна якість в комбінації з уточненим підходом до
+                деталей, яким не можуть похизуватись імениті роздуті фірми.
+              </p>
+              <div>Тканина сорту пен'є</div>
+              <div>
+                Склад: <span class="highlight">95%</span> cotton,
+                <span class="highlight">5%</span> spandex. Щільність
+                <span class="highlight">170 г/м&sup2;</span>
+              </div>
+            </div>
+            <div class="treatment-info media-query">
+              <button class="treatment-btn text-gray">РОЗМІРНА СІТКА</button>
+              <button class="treatment-btn text-gray">ДОГЛЯД ЗА РІЧЧЮ</button>
+            </div>
+            <div class="sizes">
+              <p class="text-gray flex-solo">Виберіть розмір</p>
+              <div class="size-btn-media-queryper media-query">
+                <button class="size-btn active">XS</button>
+                <button class="size-btn">S</button>
+                <button class="size-btn">M</button>
+                <button class="size-btn">L</button>
+                <button class="size-btn">XL</button>
+                <button class="size-btn">2XL</button>
+                <button class="size-btn">3XL</button>
+              </div>
+            </div>
+            <div class="quantity-container">
+              <p class="text-gray flex-solo">Кількість:</p>
+              <div class="quantity-section media-query">
+                <div class="quantity-controls">
+                  <button class="minus-btn">&minus;</button>
+                  <input type="text" class="quantity-input" placeholder="1" />
+                  <button class="plus-btn">&plus;</button>
+                </div>
+                <button class="add-to-cart-btn">
+                  ДОДАТИ ДО КОШИКУ
+                  <svg
+                    class="arrow-right-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>3-Arrow Right</title>
+                    <g id="_3-Arrow_Right" data-name="3-Arrow Right">
+                      <path
+                        d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"
+                      />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recommended">
+        <h2>РЕКОМЕНДУЄМО <span class="h2-white">ПРИДБАТИ</span></h2>
+        <div class="carousel">
+          <ul class="slider">
+            <li class="slide"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <special-footer></special-footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+.footer {
+    padding: 2.5rem;
+    background-color: black;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.footer-content > *{
+    margin-top: 20px;
+    font-size: 0.75rem;
+}
+
+.footer-content * {
+    color: rgb(216, 216, 216);
+    line-height: 1.5rem;
+}
+
+.footer__logo {
+    width: 127px;
+    height: 40px;
+}
+
+.footer__email-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2em;
+}
+
+.email-pref {
+    text-transform: uppercase;
+    color: var(--clr-gray);
+}
+
+.email-content {
+    font-size: 0.875rem;
+}
+
+.footer__work-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-hours-pref {
+    color: var(--clr-gray);
+    text-transform: uppercase;
+}
+
+.work-hours-content {
+    font-size: 1.25rem;
+}
+
+.footer__payment-methods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-methods-pref {
+    color: var(--clr-gray);
+    text-transform: uppercase;
+}
+
+.payment-methods-conent {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    max-width: 320px;
+    margin-top: 7px;
+}
+
+.payment-methods-conent
+.private24-option-img, .mastercard-option-img{
+    height: 64px;
+    margin-top: 0;
+}
+
+.payment-methods-conent
+.visa-option-img, .wayforpay-option-img {
+    align-self: flex-end;
+    height: 17px;
+}
+
+.licence-content {
+    font-size: 1rem;
+}
+
+.agreement a {
+    text-decoration: none;
+    border-bottom: 1px dashed rgb(202, 201, 201);
+    font-size: 1rem;
+}
+
+.footer__delivery {
+    display: none;
+}
+
+.footer-nav {
+    display: none;
+}
+
+@media screen and (min-width: 1025px) {
+    .footer {
+        height: 339px;
+    }
+    
+    .footer-content {
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer-content > * {
+        margin: 0;
+    }
+
+    .footer__logo {
+        position: absolute;
+        top: 73px;
+    }
+
+    .licence-content {
+        position: absolute;
+        top: 173px;
+        left: 0;
+    }
+
+    .agreement {
+        position: absolute;
+        left: 190px;
+        top: 173px;
+    }
+
+    .footer__email-info {
+        position: absolute;
+        align-items: flex-end;
+        bottom: 148px;
+        right: 210px;
+    }
+
+    .footer__work-hours {
+        position: absolute;
+        align-items: flex-end;
+        bottom: 63px;
+        right: 210px;
+    }
+
+    .footer__payment-methods {
+        position: absolute;
+        align-items: flex-start;
+        bottom: 62px;
+        right: 0;
+    }
+
+    .payment-methods-conent {
+        width: 155px;
+        flex-wrap: wrap;
+    }
+
+    .payment-methods-conent
+    .private24-option-img, .mastercard-option-img{
+        height: 64px;
+        margin-top: 20px;
+    }
+
+    .footer__delivery {
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        right: 0;
+        text-align: end;
+        font-size: 0.875rem;
+        color: var(--clr-gray);
+    }
+
+    .footer-nav {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        top: 0;
+    }
+
+    .footer-nav li:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+
+
+@media screen and (min-width: 1700px) {
+    .footer {
+        height: 269px;
+    }
+    
+    .footer-nav {
+        width: auto;
+    }
+
+
+}
